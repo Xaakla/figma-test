@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'selective-process';
+
+  constructor(public screen: Screen) {
+  }
 }

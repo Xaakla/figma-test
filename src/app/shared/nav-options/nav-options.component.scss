@@ -1,0 +1,44 @@
+@import '/src/assets/scss/variables';
+
+ul {
+  list-style: none;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  ul {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 8px;
+      margin: 16px;
+      font-size: 18px;
+    }
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  ul {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+
+    li {
+      font-size: 18px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '/src/assets/scss/variables';
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 34px;
+
+  .menu {
+    user-select: none;
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  .nav-bar {
+    .menu {
+      display: none;
+    }
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  app-nav-options {
+    display: none;
+  }
+}
+

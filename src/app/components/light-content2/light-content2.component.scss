@@ -1,0 +1,55 @@
+@import '/src/assets/scss/variables';
+
+.container {
+  display: flex;
+  background: rgb(255,255,255);
+  background: linear-gradient(360deg, rgba(255,255,255,1) 47%, rgba(0,225,198,0.1516981792717087) 100%, rgba(255,255,255,1) 100%);
+
+  .left-content {
+    h3 {
+      font-size: 36px;
+      color: $first-text;
+      line-height: 42px;
+      letter-spacing: 0.1px;
+      font-weight: 450;
+    }
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 19px;
+      color: $secondary-text;
+      margin-bottom: 79px;
+      font-weight: 450;
+      line-height: 30px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  .container {
+    padding: 50px 200px;
+
+    .left-content, .right-content {
+      flex: 1;
+    }
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+
+    .right-content {
+      margin-top: 77px;
+    }
+  }
+}

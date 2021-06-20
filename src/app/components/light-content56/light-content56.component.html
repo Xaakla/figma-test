@@ -1,0 +1,28 @@
+<div class="container-content-5-6" [style]="content === 6 && screen.width >= 720 ? 'flex-direction: row' : 'flex-direction: row-reserve'">
+  <img src="/assets/img/content5-desktop.png" alt="content5-desktop" class="header-img" id="content5-desktop"
+       *ngIf="content === 5 && screen.width >= 720"
+  />
+  <img src="/assets/img/content5-mobile.png" alt="content5-mobile" class="header-img" id="content5-mobile"
+       *ngIf="content === 5 && screen.width <= 720"
+  />
+  <img src="/assets/img/content6-desktop.png" alt="content6-desktop" class="header-img" id="content6-desktop"
+       *ngIf="content === 6 && screen.width >= 720"
+  />
+  <img src="/assets/img/content6-mobile.png" alt="content6-mobile" class="header-img" id="content6-mobile"
+       *ngIf="content === 6 && screen.width <= 720"
+  />
+
+  <img [src]="'/assets/img/content'+ content +'.png'" [alt]="'content' + content" />
+
+  <section class="content-5-6">
+    <h1>
+      <ng-content select=".title"></ng-content>
+    </h1>
+    <span>
+      <ng-content select=".subtitle"></ng-content>
+    </span>
+
+    <a>LEARN MORE</a>
+
+  </section>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Just type</h2>
+
+  <h1>Fastest way to navigate</h1>
+
+  <span>Most calendars are designed for teams. Slate is designed for freelancers.</span>
+
+  <div class="btn-container">
+    <app-button
+      btnType="btn-type1"
+      [margin]="screen.width >= 720 ? '0 25px 0 0' : '0 0 13px 0'"
+      [width]="screen.width <= 720 ? '100%' : ''"
+    >
+      Download
+    </app-button>
+    <app-button
+      btnType="btn-type3"
+      [margin]="screen.width >= 720 ? '0 0 0 0' : '0 0 0 0'"
+      [width]="screen.width <= 720 ? '100%' : ''"
+    >
+      See Walkthrough
+    </app-button>
+  </div>
+</div>

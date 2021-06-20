@@ -1,0 +1,29 @@
+<div class="container">
+  <img src="/assets/img/testimonials-top-desktop.png" alt="testimonials-top-desktop" class="header-img" id="testimonials-top-desktop"
+       *ngIf="screen.width >= 720"
+  />
+  <img src="/assets/img/testimonials-top-mobile.png" alt="testimonials-top-mobile" class="header-img" id="testimonials-top-mobile"
+       *ngIf="screen.width <= 720"
+  />
+  <img src="/assets/img/testimonials-bottom.png" alt="testimonials-bottom" class="header-img" id="testimonials-bottom" />
+
+  <h1>Testimonials</h1>
+
+  <img src="/assets/img/ibm.png" alt="ibm" class="ibm" />
+
+  <span class="testimonial-detail">
+    Being a freelancer is a rollercoaster of emotions.
+    We built Slate to keep your freelance business less stressful.
+    We'd love to show you what we're building...
+  </span>
+
+  <div class="client">
+    <img src="/assets/img/client.png" alt="client" />
+    <section class="stats">
+      <span>Esther Webb</span><br/>
+      <span>Designer</span>
+    </section>
+  </div>
+
+  <app-button btnType="btn-type1">All Testimonials</app-button>
+</div>

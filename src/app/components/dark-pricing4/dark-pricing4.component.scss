@@ -1,0 +1,97 @@
+@import '/src/assets/scss/variables';
+
+.container {
+  display: flex;
+
+  background-color: $dark-background;
+  padding: 100px 20px;
+  color: $light-text;
+
+  .left-content {
+    h1 {
+      font-size: 56px;
+      margin-bottom: 26px;
+      line-height: 65px;
+      font-weight: 700;
+    }
+
+    .pricing-detail {
+      font-size: 19px;
+      line-height: 30px;
+      font-weight: 450;
+    }
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      &:nth-child(1) {
+        font-size: 18px;
+        margin-bottom: 40px;
+        letter-spacing: 0.1px;
+        line-height: 28px;
+        font-weight: 450;
+      }
+      &:nth-child(3) {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 450;
+        line-height: 30px;
+      }
+    }
+
+    .month-per-user {
+      margin-bottom: 30px;
+
+      span {
+        &:nth-child(1) {
+          font-size: 72px;
+          color: $yellow-text;
+          line-height: 78px;
+          font-weight: 900;
+        }
+        &:nth-child(2) {
+          font-size: 24px;
+          line-height: 38px;
+          font-weight: 450;
+        }
+      }
+    }
+  }
+
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 210px;
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .left-content {
+      text-align: center;
+    }
+
+    .right-content {
+      text-align: center;
+
+      span {
+        &:nth-child(1) {
+          margin-top: 77px;
+        }
+      }
+    }
+  }
+}

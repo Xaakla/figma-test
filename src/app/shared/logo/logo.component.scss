@@ -1,0 +1,23 @@
+@import '/src/assets/scss/variables';
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    cursor: pointer;
+    width: 186px;
+  }
+
+  .slogan {
+    font-size: 18px;
+    color: $secondary-text;
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  .logo-box {
+    align-items: center;
+  }
+}

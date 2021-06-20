@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>
+    {{
+      screen.width >= 720 ?
+        "A rethink of how we work" :
+        "File tasks"
+    }}
+  </h1>
+
+  <span>
+    {{
+      screen.width >= 720 ?
+        "Being a freelancer is a rollercoaster of emotions. We built Slate to keep your" :
+        "Being a freelancer is a rollercoaster \n" +
+        "of emotions. We built Slate to keep \n" +
+        "your freelance business \n" +
+        "less stressful."
+    }}
+  </span>
+
+  <div class="bar-container">
+    <div class="bar">
+      <div class="value"></div>
+    </div>
+    <section class="stats">
+      <span>Facebook</span>
+      <span>35,929</span>
+    </section>
+  </div>
+
+  <app-button btnType="btn-type1">Get Started For Free</app-button>
+</div>

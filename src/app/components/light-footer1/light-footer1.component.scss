@@ -1,0 +1,38 @@
+@import '/src/assets/scss/variables';
+
+// Footer styles - - - - -- - - - - - - - - - - - - -
+.container {
+  .social-medias {
+    img {
+      margin-right: 40px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 61px 86px;
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  .container {
+    padding: 71px 0;
+    text-align: center;
+
+    .social-medias {
+      margin-top: 114px;
+    }
+  }
+}

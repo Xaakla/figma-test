@@ -1,0 +1,43 @@
+@import '/src/assets/scss/variables';
+
+.container {
+  padding: 62px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    font-weight: 450;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+    margin-bottom: 27px;
+    color: $yellow-text;
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 27px;
+    color: $first-text;
+    line-height: 65px;
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 24px;
+    margin-bottom: 69px;
+    color: $secondary-text;
+    line-height: 38px;
+    font-weight: 450;
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  .container {
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

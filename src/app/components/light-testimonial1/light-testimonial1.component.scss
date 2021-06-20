@@ -1,0 +1,92 @@
+@import '/src/assets/scss/variables';
+
+.container {
+  padding: 108px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    font-size: 36px;
+    color: $first-text;
+    margin-bottom: 79px;
+    line-height: 42px;
+    font-weight: 450;
+    letter-spacing: 0.1px;
+  }
+
+  .ibm {
+    margin-bottom: 79px;
+  }
+
+  .testimonial-detail {
+    font-size: 19px;
+    color: $secondary-text;
+    margin-bottom: 60px;
+    line-height: 30px;
+    font-weight: 450;
+  }
+
+  .client {
+    display: flex;
+    margin-bottom: 50px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 23px;
+    }
+
+    .stats {
+      text-align: left;
+
+      span {
+        &:nth-child(1) {
+          font-size: 18px;
+          color: $first-text;
+          line-height: 20px;
+          font-weight: 450;
+        }
+        &:nth-child(2) {
+          font-size: 18px;
+          color: $secondary-text;
+          line-height: 28px;
+          letter-spacing: 0.1px;
+          font-weight: 450;
+        }
+      }
+    }
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  .container {
+    span {
+      width: 530px;
+    }
+
+    #testimonials-top-desktop {
+      top: 50%;
+      left: 50px;
+    }
+    #testimonials-bottom {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+// Style to mobile
+@media(max-width: 720px) {
+  #testimonials-top-mobile {
+    top: 30%;
+    left: 0;
+  }
+  #testimonials-bottom {
+    bottom: 0;
+    right: 0;
+  }
+}
